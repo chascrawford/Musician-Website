@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    min-height: 1200px;
+    /* viewport height, accounts for mobile UI */
+    display: flex;
+    flex-direction: column;
+}
+
+nav.sticky {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+
+    a{
+        white-space: nowrap;
+    }
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 20;
+        gap: 6px;
+        margin-left: 8px;
+    }
+    .hamburger span {
+        display: block;
+        width: 28px;
+        height: 4px;
+        background: #fff;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+    .nav-links {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+.menuBtn{
+    padding: 0.5em !important;
+}
+
+.nav.container{
+    width: 100%;
+}
+// Popover menu styles
+// Popover menu slides in from left
+// Popover menu slides in from left
+.popover-menu.left {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(.7,.3,.3,1);
+}
+.popover-menu.left.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popover-nav.left {
+    background: var(--glass-bg);
+    backdrop-filter: blur(18px) saturate(120%);
+    -webkit-backdrop-filter: blur(18px) saturate(120%);
+    border-radius: 0 24px 24px 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 48px 32px 32px 32px;
+    min-width: 220px;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    margin-top: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(.7,.3,.3,1), opacity 0.3s cubic-bezier(.7,.3,.3,1);
+}
+.popover-menu.left.open .popover-nav.left {
+    transform: translateX(0);
+    opacity: 1;
+}
+.popover-nav a {
+    color: var(--accent-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 0;
+}
+@media (max-width: 900px) {
+    nav.sticky .nav-links {
+        display: none;
+    }
+    nav.sticky .hamburger {
+        display: flex;
+    }
+}

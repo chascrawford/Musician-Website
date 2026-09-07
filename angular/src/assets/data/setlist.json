@@ -1,0 +1,144 @@
+{
+  "Originals": [
+    {
+      "artist": "Originals",
+      "song": "Just Stars"
+    },
+    {
+      "artist": "Originals",
+      "song": "Dream"
+    },
+    {
+      "artist": "Originals",
+      "song": "The Jacket"
+    },
+    {
+      "artist": "Originals",
+      "song": "In the Sun"
+    },
+    {
+      "artist": "Originals",
+      "song": "Ma'am"
+    },
+    {
+      "artist": "Originals",
+      "song": "Spot"
+    }
+  ],
+  "Classic Rock": [
+    {
+      "artist": "Creedence Clearwater Revival",
+      "song": "Have You Ever Seen the Rain"
+    },
+    {
+      "artist": "Roy Orbison",
+      "song": "Pretty Woman"
+    },
+    {
+      "artist": "Stealers Wheel",
+      "song": "Stuck in the Middle with You"
+    },
+    {
+      "artist": "Van Morrison",
+      "song": "Moondance"
+    },
+    {
+      "artist": "Van Morrison",
+      "song": "Into the Mystic"
+    },
+    {
+      "artist": "Van Morrison",
+      "song": "Days Like This"
+    },
+    {
+      "artist": "Billy Joel",
+      "song": "Only the Good Die Young"
+    },
+    {
+      "artist": "Tom Petty",
+      "song": "You Don't Know How It Feels"
+    }
+  ],
+  "Country": [
+    {
+      "artist": "Alan Jackson & Jimmy Buffett",
+      "song": "It's Five O'Clock Somewhere"
+    },
+    {
+      "artist": "John Denver",
+      "song": "Take Me Home, Country Roads"
+    }
+  ],
+  "Southern Rock/Jam Bands": [
+    {
+      "artist": "The Allman Brothers Band",
+      "song": "One Way Out (Elmore James)"
+    }
+  ],
+  "Folk/Soft Rock": [
+    {
+      "artist": "Bob Dylan",
+      "song": "Don't Think Twice, It's Alright"
+    },
+    {
+      "artist": "Bob Dylan",
+      "song": "The Times They Are a-Changin'"
+    },
+    {
+      "artist": "John Prine",
+      "song": "Angel From Montgomery"
+    },
+    {
+      "artist": "Tom Petty",
+      "song": "Wildflowers"
+    },
+    {
+      "artist": "Old Crow Medicine Show (Bob Dylan)",
+      "song": "Wagon Wheel"
+    }
+  ],
+  "Blues": [
+    {
+      "artist": "T-Bone Walker",
+      "song": "Stormy Monday"
+    },
+    {
+      "artist": "Jimmy Cox",
+      "song": "Nobody Knows You When You're Down and Out"
+    }
+  ],
+  "Indie/Alternative": [
+    {
+      "artist": "Cage the Elephant",
+      "song": "Ain't No Rest for the Wicked"
+    }
+  ],
+  "R&B/Soul": [
+    {
+      "artist": "The Impressions",
+      "song": "It's All Right"
+    }
+  ],
+  "Pop": [
+    {
+      "artist": "ABBA",
+      "song": "Dancing Queen"
+    },
+    {
+      "artist": "Lady Gaga",
+      "song": "Always Remember Us This Way"
+    }
+  ],
+  "Reggae": [
+    {
+      "artist": "Sublime",
+      "song": "Badfish"
+    }
+  ],
+  "Holiday Tunes": [
+    {
+      "artist": "Various",
+      "song": "Santa Claus Is Coming to Town"
+    }
+  ]
+}

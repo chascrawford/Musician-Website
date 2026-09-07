@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Gallery</h1>
+    <div class="grid cols-3">
+        <div *ngFor="let img of images()" class="glass" style="padding:8px;">
+            <img [src]="img" alt="Gallery image" style="width:100%; border-radius:12px;" />
+        </div>
+    </div>
+</div>

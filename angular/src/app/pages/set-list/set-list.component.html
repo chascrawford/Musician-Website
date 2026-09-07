@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Interactive Set List</h1>
+    <div class="card">
+        <div class="searchbar">
+            <input class="input" type="text" placeholder="Search song or artist" [(ngModel)]="q" />
+            <select class="input" [(ngModel)]="by">
+                <option value="all">All</option>
+                <option value="section">Genre</option>
+                <option value="artist">Artist</option>
+                <option value="song">Song Title</option>
+                <option value="originals">Originals only</option>
+            </select>
+            <select class="input" [(ngModel)]="section">
+                <option value="">All Genres</option>
+                <option *ngFor="let s of sections()" [value]="s">{{s}}</option>
+            </select>
+        </div>
+        <div class="grid cols-3">
+            <div *ngFor="let item of filtered()" class="glass" style="padding:14px;">
+                <div style="font-weight:700">{{ item.song }}</div>
+                <div>{{ item.artist }}</div>
+                <small style="opacity:.8">{{ item.section }}</small>
+            </div>
+        </div>
+    </div>
+</div>

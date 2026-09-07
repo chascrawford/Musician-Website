@@ -1,0 +1,42 @@
+<div class="page">
+    <nav class="sticky">
+        <div class="container nav">
+                <!-- Hamburger button for mobile (left side) -->
+                <button class="hamburger" type="button" aria-label="Open menu" (click)="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a routerLink="/">Chas Crawford</a>
+                <span class="spacer"></span>
+                <div class="nav-links">
+                    <a routerLink="/">Home</a>
+                    <a routerLink="/set-list">Set List</a>
+                    <a routerLink="/performances">Performances</a>
+                    <a routerLink="/gallery">Gallery</a>
+                    <a routerLink="/bio">Bio</a>
+                    <a href="https://www.gofundme.com/" target="_blank" rel="noopener" class="btn">Tip/Donate</a>
+                </div>
+        </div>
+    </nav>
+
+        <!-- Popover menu for mobile -->
+        <div class="popover-menu left" [class.open]="menuOpen" (click)="toggleMenu()">
+            <nav class="popover-nav left" (click)="$event.stopPropagation()">
+                <a routerLink="/" (click)="toggleMenu()">Home</a>
+                <a routerLink="/set-list" (click)="toggleMenu()">Set List</a>
+                <a routerLink="/performances" (click)="toggleMenu()">Performances</a>
+                <a routerLink="/gallery" (click)="toggleMenu()">Gallery</a>
+                <a routerLink="/bio" (click)="toggleMenu()">Bio</a>
+                <a href="https://www.gofundme.com/" target="_blank" rel="noopener" class="btn menuBtn" (click)="toggleMenu()">Tip/Donate</a>
+            </nav>
+        </div>
+    <router-outlet />
+
+    <footer>
+        <div class="container">
+            <strong>Contact</strong><br />
+            <span><!-- TODO: Artist Name --></span> · <a href="mailto:<!-- TODO: email -->"><!-- TODO: email --></a>
+        </div>
+    </footer>
+</div>
